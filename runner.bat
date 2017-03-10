@@ -2,12 +2,12 @@
 cls
 Set Sleep=0
 :start
-if %Sleep% == 30 ( goto end )
+if %Sleep% == 10 ( goto end )
 echo This is a loop
 call npm test
 Set /A Sleep+=1
 echo %Sleep%
 goto start
 :end
-echo "am 30 now"
+echo "am 10 now"
 pause
